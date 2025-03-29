@@ -5,7 +5,7 @@ import App from "./App.jsx";
 import { Toaster } from "react-hot-toast";
 import { BrowserRouter } from "react-router-dom";
 import { AuthContextProvider } from "./context/AuthContext.jsx";
-import { UserContextProvider } from "./context/userContext.jsx";
+import { UserContextProvider } from "./context/UserContext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
