@@ -20,7 +20,7 @@ export const UserContextProvider = ({ children }) => {
       }/api/users?page=${page}&per_page=${perPage}`;
       const response = await axios.get(url);
 
-      if (response.data && response.data.data) {
+      if (response.data.data) {
         setUsers(response.data.data);
         setCurrentPage(response.data.page);
         setTotalPages(response.data.total_pages);
@@ -36,7 +36,7 @@ export const UserContextProvider = ({ children }) => {
 
   const deleteUser = async (id) => {
     try {
-      console.log("Deleting user with ID:", id);
+      console.log(id);
 
       const response = await axios.delete(
         `${import.meta.env.VITE_API_URL}/api/users/${id}`

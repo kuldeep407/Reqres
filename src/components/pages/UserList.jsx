@@ -21,7 +21,7 @@ import { MdDelete } from "react-icons/md";
 import axios from "axios";
 import toast from "react-hot-toast";
 
-export default function ResponsiveTable() {
+export default function UserList() {
   const {
     users,
     currentPage,
